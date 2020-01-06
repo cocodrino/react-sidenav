@@ -1,5 +1,36 @@
 # react-sidenav
 
+## IMPORTANT
+### this is a fork from **wmira/react-sidenav** which allow automatically collapse a submenu when you select 
+
+## How use it:
+Use exactly as wmira/react-sidenav but you for enable the autocollapse feature pass **collapseAutomatically** as a prop for **SideNav**
+
+```react
+<SideNav 
+        childrenToggleMode={ChildrenToggleMode.hover}
+        collapseAutomatically
+        defaultSelectedPath={'page1'}>
+        <Nav id='page1'>
+          <Item>Page 1</Item>
+        </Nav>
+        <Nav id='page2'>
+          <Item>Page 2</Item>
+          <Nav id='page2.1'>
+            <Item>Page 2.1</Item>
+          </Nav>
+          <Nav id='page2.2'>
+            <Item>Page 2.2</Item>
+          </Nav>
+        </Nav>
+        <Nav id='page3'>
+          <Item>Page 3</Item>
+        </Nav>
+      </SideNav>
+```
+
+![example](https://s5.gifyu.com/images/menu2.gif)
+
 [![Build Status](https://gitlab.com/wmira/react-sidenav/badges/master/build.svg)](https://gitlab.com/wmira/react-sidenav/pipelines)
 [![coverage report](https://gitlab.com/wmira/react-sidenav/badges/master/coverage.svg)](https://gitlab.com/wmira/react-sidenav/commits/master)
 [![npm version](https://badge.fury.io/js/react-sidenav.svg)](https://badge.fury.io/js/react-sidenav)
