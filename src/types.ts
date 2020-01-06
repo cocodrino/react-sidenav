@@ -61,14 +61,16 @@ export interface ISideNavContext {
    */
   childrenToggleMode: ChildrenToggleMode
 
-  /**   
-   * 
+  /**
+   *
    * Note that in compact mode, toggle indicator is not normally rendered.
    */
   childrenToggleIndicator?: React.ComponentType
 
   /**
-   * 
+   *
    */
+  collapseAutomatically?: boolean
+
   mouseOverPathId?: string;
 }
