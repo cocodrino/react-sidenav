@@ -3,6 +3,10 @@
 ## IMPORTANT
 ### this is a fork from **wmira/react-sidenav** which allow automatically collapse a submenu when you select 
 
+
+![example](https://s5.gifyu.com/images/menu2.gif)
+
+
 ## How use it:
 Use exactly as wmira/react-sidenav but you for enable the autocollapse feature pass **collapseAutomatically** as a prop for **SideNav**
 
@@ -29,7 +33,6 @@ Use exactly as wmira/react-sidenav but you for enable the autocollapse feature p
       </SideNav>
 ```
 
-![example](https://s5.gifyu.com/images/menu2.gif)
 
 [![Build Status](https://gitlab.com/wmira/react-sidenav/badges/master/build.svg)](https://gitlab.com/wmira/react-sidenav/pipelines)
 [![coverage report](https://gitlab.com/wmira/react-sidenav/badges/master/coverage.svg)](https://gitlab.com/wmira/react-sidenav/commits/master)
