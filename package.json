@@ -3,6 +3,7 @@
   "version": "4.0.6",
   "description": "A Simple SideBar Navigation written in React",
   "author": "Warren Mira",
+  "main": "dist/index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --content-base playground src/playground/index.tsx  ",
     "start:compact": "webpack-dev-server --mode development --content-base playground src/playground/compact.tsx  ",
