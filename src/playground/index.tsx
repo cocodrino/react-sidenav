@@ -79,7 +79,7 @@ render(
             <SideNav
                 childrenToggleMode={ChildrenToggleMode.hover}
                 collapseAutomatically
-                defaultSelectedPath={'page1'}>
+                defaultSelectedPath={"page2|page2.1"}>
                 <Nav id='page1'>
                     <Item>Page 1</Item>
                 </Nav>

@@ -61,7 +61,8 @@ exports.NavGroup = function (props) {
     var ToggleIndicatorComp = context.childrenToggleIndicator || ToggleIndicator;
     React.useEffect(function () {
         if (context.collapseAutomatically) {
-            setState((context.mouseOverPathId && context.mouseOverPathId.includes(navContext.pathId)) || context.selectedPath.includes(navContext.pathId) ? types_1.NavGroupState.expanded : types_1.NavGroupState.collapsed);
+            // @ts-ignore
+            setState((context.mouseOverPathId && (context.mouseOverPathId.includes(navContext.pathId) || navContext.pathId.includes(context.mouseOverPathId))) || context.selectedPath.includes(navContext.pathId) ? types_1.NavGroupState.expanded : types_1.NavGroupState.collapsed);
         }
         if (navContext.pathId &&
             context.mouseOverPathId && (isHoverToggleMode || isCompact)) {

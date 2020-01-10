@@ -55,7 +55,8 @@ export const NavGroup: React.FC<INavGroupProp> = (props) => {
   const ToggleIndicatorComp = context.childrenToggleIndicator || ToggleIndicator
   React.useEffect(() => {
     if(context.collapseAutomatically){
-      setState((context.mouseOverPathId && context.mouseOverPathId.includes(navContext.pathId)) || context.selectedPath.includes(navContext.pathId) ? NavGroupState.expanded : NavGroupState.collapsed)
+      // @ts-ignore
+      setState((context.mouseOverPathId && (context.mouseOverPathId.includes(navContext.pathId) || navContext.pathId.includes(context.mouseOverPathId))) || context.selectedPath.includes(navContext.pathId) ? NavGroupState.expanded : NavGroupState.collapsed)
     }
 
     if ( navContext.pathId &&
